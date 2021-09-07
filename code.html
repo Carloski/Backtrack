@@ -33,7 +33,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="app.html">TheApp</a>
+                    <a class="nav-link" href="app.html">The App</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="code.html">The Code</a>
@@ -52,22 +52,60 @@
  <!-- ====== MAIN SECTION ====== -->
  <main class="flex-shrink-0">
     <div class="container py-5 px-5 mt-5">
-        <h2 class="border-1 border-bottom border-dark">The Code for [APP NAME.]</h2>
+        <h2 class="border-1 border-bottom border-dark">The Code for BackTrack</h2>
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col-lg-8">
                 <pre class="line-numbers">
                     <code class="language-javascript">
-                        //Testing Prism
-                        function helloWorld(){
-                            alert('Hello World!');
+                        
+                        //Get the values (String) from the Page
+                        // controller function
+                        function getValue() {
+                            // add invisible class to alert message
+                            document.getElementById("alert").classList.add("invisible");
+                            let string = document.getElementById("userString").value;
+                            let revString = reverseString(string);
+                            displayString(revString);
                         }
+
+                        // Reverse the String
+                        // Logic function
+                        function reverseString(string) {
+                            let revString = [];
+                            // reverse the string using for loop
+                            for (let index = string.length - 1; index >= 0; index--) {
+                                revString += string[index];
+                            }
+                            return revString;
+                        }
+
+                        // Display the message with reversed string
+                        // View function
+                        function displayString(revString) {
+                                // Write to the page
+                                document.getElementById("msg").innerHTML = `<h3 class="fw-bold">${revString}</h3>`;
+                                // Show the alert box
+                                document.getElementById("alert").classList.remove("invisible");
+                        }
+
                     </code>
                 </pre>
             </div>
             <div class="col-lg-4">
-                <h5 class="mt-2">Hello World</h5>
-                <p>The code is structured in one function</p>
-                <p>Hello World is a function that displays a message in the Page.</p>
+                <h5 class="mt-2">BackTrack</h5>
+                <p>The code is structured in 3 functions</p>
+                <p>
+                    <strong>getValue</strong> is the function linked to the "Reverse Me" button. 
+                    It captures the users input and then triggers the displayString function. 
+                </p>
+                <p>
+                    <strong>reverseString</strong> is the logic function that reverses the users input by using a for loop
+                    to reverse the input and store the new string in an array. 
+                </p>
+                <p>
+                    The <strong>displayString</strong> function removes the invisible class from the message div and uses 
+                    "innerHTML" to display the results in the Page. 
+                </p>
             </div>
         </div>
     </div>
