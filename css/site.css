@@ -77,6 +77,14 @@ footer {
   color: #0168ba;
 }
 
+.giticon {
+  color: var(--dark-color);
+}
+
+.gitText {
+  font-size: 25px;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   white-space: pre-wrap;
