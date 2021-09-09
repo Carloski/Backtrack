@@ -1,6 +1,6 @@
 :root {
   --primary-color: #000000;
-  --secondary-color: #FF1715;
+  --secondary-color: #ff1715;
   --dark-color: #292929;
   --light-color: #dff3e4;
 }
@@ -92,16 +92,21 @@ pre[class*="language-"] {
   word-wrap: break-word;
 }
 
-.main > img {
+.img {
   width: 700px;
-  height: 500px;
 }
 
-@media screen and (min-width: 822px){
-  .main > img {
-    width: 400px;
-    height: 400px;
+.desc-container {
+  max-width: 30% !important;
+}
+
+@media screen and (min-width: 350px) {
+  .img {
+    width: 400px !important;
+    height: 390px;
+  }
+
+  .navbar {
+    padding-left: 15px;
   }
 }
-
-
