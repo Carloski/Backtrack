@@ -96,9 +96,6 @@ pre[class*="language-"] {
   width: 700px;
 }
 
-.desc-container {
-  max-width: 30% !important;
-}
 
 @media screen and (min-width: 350px) {
   .img {
