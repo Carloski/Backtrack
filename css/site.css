@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #000000;
-  --secondary-color: #ff1715;
+  --primary-color: #023047;
+  --secondary-color: #fb8500;
   --dark-color: #292929;
   --light-color: #dff3e4;
 }
@@ -53,12 +53,17 @@ footer {
 }
 
 .checklist > li i {
+  
+  color: var(--primary-color);
+}
+
+.checklist > li i:hover {
   color: var(--secondary-color);
 }
 
 .fab:hover {
   opacity: 0.9;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .bsicon {
