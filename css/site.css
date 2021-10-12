@@ -1,16 +1,16 @@
 :root {
-  --primary-color: #303030;
+  --primary-color: #07a5c3;
   --secondary-color: #fb8500;
-  --dark-color: #292929;
+  --dark-color: #303030;
   --light-color: #dff3e4;
 }
 
 body {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 nav {
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
   color: var(--light-color);
 }
 
@@ -20,11 +20,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .accent {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 main > .container {
@@ -39,7 +39,7 @@ main > .container {
 }
 
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
   color: var(--light-color);
 }
 
@@ -57,16 +57,16 @@ footer {
 }
 
 .checklist > li i {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .checklist > li i:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .fab:hover {
   opacity: 0.9;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .bsicon {
@@ -86,7 +86,7 @@ footer {
 }
 
 .giticon {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .gitText {

@@ -10,7 +10,7 @@ function getValue() {
 
     let revString = reverseString(string);
 
-    displayString(revString);
+    displayString(revString.toLowerCase());
 }
 
 // Reverse the String
@@ -23,6 +23,7 @@ function reverseString(string) {
         revString += string[index];
     }
     return revString;
+    
 }
 
 // Display the message with reversed string
